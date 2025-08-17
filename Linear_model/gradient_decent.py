@@ -13,8 +13,8 @@ class gd:
     def fit(self , X_train , Y_train ):
         
        for i in range(self.epoch):
-            slope_m = -2 *np.sum((Y_train - (self.m * X_train + self.b)) * X_train)/len(X_train)
-            slope_b = -2 * np.sum((Y_train - (self.m * X_train + self.b)))/len(X_train)
+            slope_m = -2 *np.mean((Y_train - (self.m * X_train + self.b)) * X_train)
+            slope_b = -2 * np.mean((Y_train - (self.m * X_train + self.b)))
 
             self.m = self.m - self.lr*slope_m
             self.b = self.b - self.lr*slope_b
