@@ -22,7 +22,7 @@ class SGD:
                 id = np.random.randint(0, X_train.shape[0])
 
                 y_pred = np.dot(X_train[id], self.coef) + self.intercept
-                slope_inter = -2(y_train[id] - y_pred)
+                slope_inter = -2*(y_train[id] - y_pred)
                 slope_coef = -2 * (y_train[id] - y_pred) * X_train[id]  
 
                 self.intercept -= self.lr * slope_inter
