@@ -18,7 +18,7 @@ class Mini_batch:
 
         for i in range(self.epochs):
 
-            # the core idea behind this gd is that we only update for one sample at a time i.e one row of training data 
+            
             for j in range(X_train.shape[0] //self.batch_size):
                 idx = random.sample(range(X_train.shape[0]) ,self.batch_size )
                 # It's more like the stochastic gradient descent just the difference is it uses mini-batches
