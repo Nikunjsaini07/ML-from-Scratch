@@ -1,8 +1,8 @@
-## ML Models From Scratch
+# ML Models From Scratch
 
 This repo contains simple Python implementations of core machine learning algorithms written from scratch (using only NumPy, no scikit-learn for training). The goal is learning and understanding the math + code behind each model, not production speed.
 
-# Implemented Models
+## Implemented Models
 
 ## Linear Regression
 
