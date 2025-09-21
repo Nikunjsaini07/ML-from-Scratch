@@ -17,8 +17,8 @@ Ridge Regression (L2 regularization)
 Classification Models
 
 ## Logistic Regression
-
-(add others if you’ve coded them)
+Sigmoid Function
+Perceptron Algorithm
 
 Each model lives in its own .py file for clarity.
 
