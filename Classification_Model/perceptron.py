@@ -15,7 +15,7 @@ class Perceptron:
                 y_hat = 1 if np.dot(X_train[j], self.weight) > 0 else 0
                 self.weight += self.lr * (y_train[j] - y_hat) * X_train[j]
                 
-                return   self 
+         return   self 
     
     def predict(self, X):
         X = np.insert(X , 0 , 1 , axis=1)
